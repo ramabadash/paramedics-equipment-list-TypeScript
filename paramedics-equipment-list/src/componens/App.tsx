@@ -1,5 +1,4 @@
 import React from 'react';
-import { useAppSelector } from '../app/hooks';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 // Components
 import EntryForm from './EntryForm';
