@@ -1,0 +1,106 @@
+/***** LIST *****/
+.navigate-btns {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigate-btns li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 0.5em;
+}
+
+.navigate-btns li:hover {
+  background-color: #111;
+}
+
+.missing-item-list {
+  list-style: none;
+  font-size: 1.5em;
+  height: 70vh;
+  overflow-y: auto;
+  background-color: rgba(39, 39, 90, 0.233);
+  margin: 0;
+  padding: 0;
+}
+
+.missing-item-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 2px black solid;
+}
+
+.missing-item-list li:nth-child(odd) {
+  background-color: rgba(255, 248, 220, 0.2);
+}
+.missing-item-list li:nth-child(even) {
+  background-color: rgba(34, 49, 119, 0.2);
+}
+
+/***** BUTTONS *****/
+.end-btn-two,
+.back-btn {
+  border-radius: 0.5em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.25em;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.back-btn {
+  background-color: rgb(32, 106, 218);
+}
+
+.end-btn-two {
+  background-color: rgb(146, 25, 25);
+}
+
+/***** CHECKBOX *****/
+input[type='checkbox'] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type='checkbox']::before {
+  content: '';
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type='checkbox']:checked::before {
+  transform: scale(1);
+}
+
+/* input[type='checkbox']:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+} */

@@ -1,0 +1,59 @@
+/***** HEADER *****/
+
+h2 {
+  text-align: center;
+  color: aliceblue;
+}
+
+/***** CONTAINERS *****/
+
+.entry-form-container {
+  border-radius: 0.25em;
+  text-align: left;
+  width: 80vh;
+  margin: auto;
+  background-color: rgba(39, 39, 90, 0.137);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 1em;
+}
+
+.input-form-container {
+  padding: 0.25em;
+  margin-top: 0.25em;
+  display: flex;
+  justify-content: space-between;
+}
+
+/***** TEXT *****/
+
+.entry-form-container label {
+  color: aliceblue;
+}
+
+/***** INPUTS *****/
+
+.entry-form-container input {
+  border-radius: 0.5em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+.entry-form-container select {
+  border-radius: 0.25em;
+  font-size: 1.25em;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/***** BUTTONS *****/
+
+.next-btn {
+  border-radius: 0.5em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 0.25em;
+  float: right;
+  background-color: goldenrod;
+  color: aliceblue;
+  cursor: pointer;
+}

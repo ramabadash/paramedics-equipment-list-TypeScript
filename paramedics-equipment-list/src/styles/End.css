@@ -1,0 +1,23 @@
+.end-container img {
+  width: 50vh;
+}
+
+/***** BUTTONS *****/
+
+.end-container li {
+  border-radius: 0.5em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.25em;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.show-btn {
+  background-color: rgb(32, 106, 218);
+}
+
+.end-btn {
+  background-color: rgb(146, 25, 25);
+}

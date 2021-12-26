@@ -1,0 +1,9 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: rgba(39, 39, 90, 0.74);
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  margin: 1em auto;
+}
