@@ -11,10 +11,7 @@ export interface WorkerInitialState {
 export interface EquipmentItem {
   name: string;
   fullQuantity: number;
-}
-
-export interface DeleteAbleEquipmentItem extends EquipmentItem {
-  deleteAble: boolean;
+  deleteAble?: boolean;
 }
 
 export interface ShiftItem {

@@ -2,8 +2,8 @@ import fullEquipmentList from '../data/db';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import {
   EquipmentListInitialState,
-  DeleteAbleEquipmentItem,
   ShiftItem,
+  EquipmentItem,
 } from '../types/types';
 
 const initialState: EquipmentListInitialState = {
@@ -17,7 +17,7 @@ export const equipmentSlice = createSlice({
     reset: state => {
       return initialState;
     },
-    addItem: (state, { payload }: PayloadAction<DeleteAbleEquipmentItem>) => {
+    addItem: (state, { payload }: PayloadAction<EquipmentItem>) => {
       const newItem = {
         name: payload.name,
         fullQuantity: payload.fullQuantity,
