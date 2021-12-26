@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
-import { useDispatch } from 'react-redux';
+import { useAppDispatch } from '../app/hooks';
 // Actions
 import { workerLogin } from '../reducers/workerReducer';
 // Pop Up messages
@@ -17,7 +17,7 @@ function EntryForm() {
   const [shift, setShift] = useState('morning');
 
   /***** FUNCTIONS *****/
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const navigate = useNavigate();
 
