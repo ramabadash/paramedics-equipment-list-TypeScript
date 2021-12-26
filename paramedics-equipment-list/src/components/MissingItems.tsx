@@ -6,14 +6,12 @@ import { reset as resetEquipment } from '../reducers/equipmentReducer';
 import { reset as resetWorker } from '../reducers/workerReducer';
 // Components
 import MissingItem from './MissingItem';
+// Types
+import { CheckIsLoginFunc } from '../types/types';
 // Style
 import '../styles/MissingItems.css';
 
-function MissingItems({
-  isLogged,
-}: {
-  isLogged: (loggedAnswer: boolean) => void;
-}) {
+function MissingItems({ isLogged }: { isLogged: CheckIsLoginFunc }) {
   /***** STATES*****/
   // Get missing items list from state
   const missingItemsList = useAppSelector(

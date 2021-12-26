@@ -3,17 +3,9 @@ import { useAppDispatch } from '../app/hooks';
 // Actions
 import { deleteItem } from '../reducers/equipmentReducer';
 // Types
-import { EquipmentItem, ShiftItem } from '../types/types';
+import { ItemRowProps } from '../types/types';
 
-function ItemRow({
-  item,
-  i,
-  setMissingItems,
-}: {
-  item: EquipmentItem;
-  i: number;
-  setMissingItems: React.Dispatch<React.SetStateAction<ShiftItem[]>>;
-}) {
+function ItemRow({ item, i, setMissingItems }: ItemRowProps) {
   /***** STATES *****/
   const [currentQuantity, setCurrentQuantity] = useState(0);
 

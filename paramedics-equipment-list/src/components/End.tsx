@@ -4,10 +4,12 @@ import { useNavigate } from 'react-router-dom';
 // Actions
 import { reset as resetEquipment } from '../reducers/equipmentReducer';
 import { reset as resetWorker } from '../reducers/workerReducer';
+// Types
+import { CheckIsLoginFunc } from '../types/types';
 // Style
 import '../styles/End.css';
 
-function End({ isLogged }: { isLogged: (loggedAnswer: boolean) => void }) {
+function End({ isLogged }: { isLogged: CheckIsLoginFunc }) {
   /***** STATES *****/
   // Get is logged
   const logged = useAppSelector(({ worker }) => worker.logged);

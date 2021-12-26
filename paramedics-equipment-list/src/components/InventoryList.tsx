@@ -7,15 +7,11 @@ import { submitEquipmentForm } from '../reducers/equipmentReducer';
 import AddItemForm from './AddItemForm';
 import ItemRow from './ItemRow';
 // Types
-import { ShiftItem } from '../types/types';
+import { ShiftItem, CheckIsLoginFunc } from '../types/types';
 // Style
 import '../styles/InventoryList.css';
 
-function InventoryList({
-  isLogged,
-}: {
-  isLogged: (loggedAnswer: boolean) => void;
-}) {
+function InventoryList({ isLogged }: { isLogged: CheckIsLoginFunc }) {
   /***** STATES *****/
   // Get full list from state
   const fullEquipmentList = useAppSelector(

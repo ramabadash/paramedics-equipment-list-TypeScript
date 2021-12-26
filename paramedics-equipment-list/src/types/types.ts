@@ -23,3 +23,12 @@ export interface EquipmentListInitialState {
   requiredEquipmentList: EquipmentItem[];
   shiftList: ShiftItem[];
 }
+
+/***** PROPS *****/
+export interface ItemRowProps {
+  item: EquipmentItem;
+  i: number;
+  setMissingItems: React.Dispatch<React.SetStateAction<ShiftItem[]>>;
+}
+
+export type CheckIsLoginFunc = (loggedAnswer: boolean) => void;
