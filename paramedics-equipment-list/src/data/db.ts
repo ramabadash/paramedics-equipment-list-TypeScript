@@ -1,6 +1,6 @@
-import { EquipmentList } from '../types/types';
+import { EquipmentItem } from '../types/types';
 
-const fullEquipmentList: EquipmentList[] = [
+const fullEquipmentList: EquipmentItem[] = [
   {
     name: 'Stethoscope',
     fullQuantity: 2,

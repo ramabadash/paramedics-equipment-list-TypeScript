@@ -1,8 +1,3 @@
-export interface EquipmentList {
-  name: string;
-  fullQuantity: number;
-}
-
 /***** WORKER REDUCER *****/
 export interface WorkerInitialState {
   fullName: string;
@@ -10,4 +5,24 @@ export interface WorkerInitialState {
   ambulanceNumber: number;
   shift: string;
   logged: boolean;
+}
+
+/***** EQUIPMENT REDUCER *****/
+export interface EquipmentItem {
+  name: string;
+  fullQuantity: number;
+}
+
+export interface DeleteAbleEquipmentItem extends EquipmentItem {
+  deleteAble: boolean;
+}
+
+export interface ShiftItem {
+  name: string;
+  missing: number;
+}
+
+export interface EquipmentListInitialState {
+  requiredEquipmentList: EquipmentItem[];
+  shiftList: ShiftItem[];
 }
